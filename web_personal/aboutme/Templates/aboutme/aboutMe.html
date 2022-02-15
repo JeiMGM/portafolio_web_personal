@@ -1,0 +1,30 @@
+{% extends "core/base.html" %}
+{% block title %}Acerca de | Jeisson Gonzalez{% endblock %}
+{% load static %}
+
+
+{% block backgroundImage %}{% static 'assets/img/about-bg.jpg' %}{% endblock backgroundImage %}
+    
+    {% block headers %}
+    <h1>Acerca de mi</h1>
+    <span class="subheading">Biograf&iacute;a</span>
+    {% endblock headers %}
+
+
+<!-- Main Content-->
+{% comment %} <main class="mb-4">
+  <div class="container px-4 px-lg-5">
+      <div class="row gx-4 gx-lg-5 justify-content-center"> {% endcomment %}
+{% block content %}
+        <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid avatar" src="{% static 'assets/img/avatar_azul.jpg' %}" alt="">
+        </div>    
+          <div class="col-md-10 col-lg-8 col-xl-7">
+              <h2 class="section-heading">Jeisson Gonzalez</h2>
+              <p class ="p-text">Me presento, mi nombre es Jeisson Gonzalez, nacido en Venezuela, proveniente de Maracaibo estado Zulia, me gradu&eacute; como Ingeniero en Sistemas en la Universidad Dr. Jos&eacute; Gregorio Hern&aacute;ndez (UJGH) a los 21 años</p>
+              <p class ="p-text">Luego de eso empec&eacute; a trabajar poco a poco en el campo del desarrollo con el lenguaje ABAP propio de SAP, pero no fue si no hasta hace unos años que decid&iacute; profundizar en el lenguaje <strong>Python</strong>, para convertirme en un <strong>desarrollador Web</strong> en los frameworks <strong>Django</strong> y <strong>Flask</strong> en el cual sigo desarrollando hasta la fecha.</p>
+          </div>
+      {% comment %} </div>
+  </div>
+</main> {% endcomment %}
+{% endblock %}
